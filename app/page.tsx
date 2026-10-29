@@ -4,7 +4,6 @@ import React from 'react';
 import { motion } from 'motion/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import QuickStrip from './components/QuickStrip';
 import ServicesSection from './components/ServicesSection';
 import PillarsSection from './components/PillarsSection';
 import SolutionsSection from './components/SolutionsSection';
@@ -25,15 +24,6 @@ export default function Page() {
           transition={{ duration: 0.6 }}
         >
           <Hero />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <QuickStrip />
         </motion.div>
 
         <motion.div

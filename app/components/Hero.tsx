@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Hotel, ArrowRight, Home, Award, CheckCircle } from 'lucide-react';
+import { ShieldCheck, Hotel, ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -31,28 +31,6 @@ export default function Hero() {
                 <span>Agendar Especialista Residencial</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
               </a>
-            </div>
-
-            {/* Trust Badges */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 border-t border-[#dfebe2]">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#e5f1e8] flex items-center justify-center shrink-0 border border-[#106e00]/10">
-                  <Home className="w-5 h-5 text-[#106e00]" />
-                </div>
-                <span className="text-xs font-bold text-[#141e19] leading-tight">Condomínios Fechados VIP</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#e5f1e8] flex items-center justify-center shrink-0 border border-[#106e00]/10">
-                  <Award className="w-5 h-5 text-[#106e00]" />
-                </div>
-                <span className="text-xs font-bold text-[#141e19] leading-tight">Rigoroso Background Check</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#e5f1e8] flex items-center justify-center shrink-0 border border-[#106e00]/10">
-                  <ShieldCheck className="w-5 h-5 text-[#106e00]" />
-                </div>
-                <span className="text-xs font-bold text-[#141e19] leading-tight">Garantia Técnica Integral</span>
-              </div>
             </div>
           </div>
 
