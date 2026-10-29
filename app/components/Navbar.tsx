@@ -1,13 +1,23 @@
 'use client';
 
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Headphones, Menu, X, ArrowRight } from 'lucide-react';
+import { Headphones, Menu, X } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Ensure page always loads at top on visit/refresh
+    window.scrollTo(0, 0);
+  }, []);
+
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
@@ -33,7 +43,11 @@ export default function Navbar() {
       <div className="h-20 sm:h-24 bg-[#037848] backdrop-blur-xl shadow-[0_4px_24px_-4px_rgba(28,53,36,0.15)] border-b border-[#025633]">
         <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
           <div className="flex items-center">
-            <div className="relative w-36 sm:w-48 h-12 sm:h-14 flex items-center">
+            <a
+              href="#"
+              onClick={scrollToTop}
+              className="relative w-36 sm:w-48 h-12 sm:h-14 flex items-center cursor-pointer"
+            >
               <Image
                 src="/assets/aistudio/Gemini_Generated_Image_1987gs1987gs1987-Photoroom_aabb7a61.png"
                 alt="Goiás Assistência Residencial Logo"
@@ -42,12 +56,12 @@ export default function Navbar() {
                 referrerPolicy="no-referrer"
                 priority
               />
-            </div>
+            </a>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden xl:flex items-center gap-2 font-medium text-sm">
-            <a href="#" className="px-4 py-2 rounded-xl bg-white/20 text-white font-bold shadow-2xs">Início</a>
+            <a href="#" onClick={scrollToTop} className="px-4 py-2 rounded-xl bg-white/20 text-white font-bold shadow-2xs">Início</a>
             <a href="#novos-servicos" className="px-4 py-2 rounded-xl text-[#f4f4f4] hover:text-white hover:bg-white/10 transition-all">Serviços Premium</a>
             <a href="#padrao" className="px-4 py-2 rounded-xl text-[#f4f4f4] hover:text-white hover:bg-white/10 transition-all">Como Funciona</a>
             <a href="#solucoes" className="px-4 py-2 rounded-xl text-[#f4f4f4] hover:text-white hover:bg-white/10 transition-all">Soluções</a>
@@ -76,7 +90,7 @@ export default function Navbar() {
         {/* Mobile Menu dropdown */}
         {mobileMenuOpen && (
           <div className="xl:hidden absolute top-full left-0 w-full bg-[#037848] border-b border-[#025633] shadow-2xl p-5 sm:p-6 flex flex-col gap-2.5 font-semibold text-sm text-white animate-in fade-in slide-in-from-top duration-200">
-            <a href="#" onClick={() => setMobileMenuOpen(false)} className="py-2.5 px-4 rounded-xl bg-white/20 font-bold">Início</a>
+            <a href="#" onClick={scrollToTop} className="py-2.5 px-4 rounded-xl bg-white/20 font-bold">Início</a>
             <a href="#novos-servicos" onClick={() => setMobileMenuOpen(false)} className="py-2.5 px-4 rounded-xl hover:bg-white/10 text-[#f4f4f4]">Serviços Premium</a>
             <a href="#padrao" onClick={() => setMobileMenuOpen(false)} className="py-2.5 px-4 rounded-xl hover:bg-white/10 text-[#f4f4f4]">Como Funciona</a>
             <a href="#solucoes" onClick={() => setMobileMenuOpen(false)} className="py-2.5 px-4 rounded-xl hover:bg-white/10 text-[#f4f4f4]">Soluções</a>

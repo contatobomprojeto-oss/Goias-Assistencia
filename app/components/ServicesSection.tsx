@@ -18,7 +18,7 @@ export default function ServicesSection() {
       if (container.scrollLeft >= maxScrollLeft - 10) {
         container.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
-        container.scrollBy({ left: 320, behavior: 'smooth' });
+        container.scrollBy({ left: 300, behavior: 'smooth' });
       }
     }, 3500);
 
@@ -89,11 +89,11 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="w-full py-12 sm:py-20 bg-[#f1fcf3] overflow-hidden" id="novos-servicos">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
+    <section className="w-full py-10 sm:py-20 bg-[#f1fcf3] overflow-hidden" id="novos-servicos">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6">
-          <div className="flex flex-col gap-2.5 max-w-2xl">
+          <div className="flex flex-col gap-2 max-w-2xl">
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#755a24]">Atualização Contínua de Soluções</span>
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#141e19]">
               Serviços Sob Medida para a sua Rotina
@@ -110,14 +110,14 @@ export default function ServicesSection() {
               <button
                 onClick={() => scroll('left')}
                 aria-label="Rolar para esquerda"
-                className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white shadow-md border border-[#1c3524]/10 flex items-center justify-center text-[#1c3524] hover:bg-[#e5f1e8] transition-colors"
+                className="w-10 h-10 rounded-full bg-white shadow-md border border-[#1c3524]/10 flex items-center justify-center text-[#1c3524] hover:bg-[#e5f1e8] transition-colors"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={() => scroll('right')}
                 aria-label="Rolar para direita"
-                className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white shadow-md border border-[#1c3524]/10 flex items-center justify-center text-[#1c3524] hover:bg-[#e5f1e8] transition-colors"
+                className="w-10 h-10 rounded-full bg-white shadow-md border border-[#1c3524]/10 flex items-center justify-center text-[#1c3524] hover:bg-[#e5f1e8] transition-colors"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
@@ -125,20 +125,20 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        {/* Horizontal Auto Carousel with optimized mobile card width */}
+        {/* Horizontal Auto Carousel with 100% visible width on mobile */}
         <div
           ref={scrollRef}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           onTouchStart={() => setIsPaused(true)}
           onTouchEnd={() => setIsPaused(false)}
-          className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-none snap-x snap-mandatory pb-6 pt-2 px-1 focus:outline-none cursor-grab active:cursor-grabbing"
+          className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-none snap-x snap-mandatory pb-4 pt-1 px-1 focus:outline-none cursor-grab active:cursor-grabbing"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {services.map((item, idx) => (
             <div
               key={idx}
-              className="min-w-[280px] sm:min-w-[340px] max-w-[340px] flex flex-col rounded-2xl sm:rounded-3xl bg-white shadow-[0_4px_24px_rgba(28,53,36,0.06)] hover:shadow-[0_12px_32px_rgba(28,53,36,0.12)] transition-all duration-300 group border border-[#1c3524]/8 overflow-hidden snap-start shrink-0"
+              className="w-[calc(100vw-3rem)] sm:w-[340px] sm:min-w-[340px] max-w-[360px] flex flex-col rounded-2xl sm:rounded-3xl bg-white shadow-[0_4px_24px_rgba(28,53,36,0.06)] hover:shadow-[0_12px_32px_rgba(28,53,36,0.12)] transition-all duration-300 group border border-[#1c3524]/8 overflow-hidden snap-center sm:snap-start shrink-0"
             >
               {/* Illustrative Image taking top */}
               <div className="relative w-full h-36 sm:h-44 overflow-hidden bg-[#e5f1e8]">
@@ -155,7 +155,7 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              <div className="flex flex-col p-5 sm:p-6 flex-1">
+              <div className="flex flex-col p-4 sm:p-6 flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-[#141e19] mb-1.5 sm:mb-2">{item.title}</h3>
                 <p className="text-xs sm:text-sm text-[#404a3b] leading-relaxed mb-4 sm:mb-6">
                   {item.desc}
