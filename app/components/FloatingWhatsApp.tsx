@@ -4,7 +4,7 @@ import WhatsAppIcon from './WhatsAppIcon';
 export default function FloatingWhatsApp() {
   return (
     <a
-      href="https://api.whatsapp.com/send/?phone=62981678149&text=Ol%C3%A1%2C+gostaria+de+falar+com+o+técnico+responsável+sobre+atendimento+residencial%21&type=phone_number&app_absent=0"
+      href="https://api.whatsapp.com/send/?phone=556281678149&text=Ol%C3%A1%2C+gostaria+de+falar+com+o+técnico+responsável+sobre+atendimento+residencial%21&type=phone_number&app_absent=0"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com o Técnico no WhatsApp"
@@ -12,7 +12,7 @@ export default function FloatingWhatsApp() {
     >
       <WhatsAppIcon className="w-8 h-8 fill-white" />
       <span className="absolute left-full ml-3 px-3.5 py-1.5 bg-[#1c3524] text-white text-xs font-bold rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-        Falar com o Técnico
+        Fale com o Técnico
       </span>
     </a>
   );

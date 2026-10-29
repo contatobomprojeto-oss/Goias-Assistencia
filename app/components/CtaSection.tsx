@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Phone } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function CtaSection() {
   return (
@@ -12,25 +12,25 @@ export default function CtaSection() {
               Precisa de um especialista hoje em sua residência?
             </h3>
             <p className="text-sm text-[#d1ddd4]">
-              Fale instantaneamente com a nossa Central VIP via WhatsApp. Sem filas, com encaminhamento prioritário para a sua região.
+              Fale instantaneamente com a nossa Central VIP via WhatsApp ou ligações. Sem filas, com encaminhamento prioritário para a sua região.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
             <a
-              href="https://api.whatsapp.com/send/?phone=62981678149&text=Ol%C3%A1%2C+gostaria+de+saber+sobre+o+servi%C3%A7o+de+voc%C3%AAs+e+um+or%C3%A7amento+se+poss%C3%ADvel%21&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=556281678149&text=Ol%C3%A1%2C+gostaria+de+saber+sobre+o+servi%C3%A7o+de+voc%C3%AAs+e+um+or%C3%A7amento+se+poss%C3%ADvel%21&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 rounded-lg bg-[#5cb846] text-white font-bold text-sm hover:bg-[#106e00] shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3"
             >
-              <MessageSquare className="w-5 h-5" />
-              <span>Chamar no WhatsApp VIP</span>
+              <WhatsAppIcon className="w-5 h-5 fill-white" />
+              <span>Chamar no WhatsApp (62) 8167-8149</span>
             </a>
             <a
-              href="tel:6239990000"
+              href="tel:556281678149"
               className="w-full sm:w-auto px-6 py-4 rounded-lg bg-[#dfebe2] text-[#141e19] font-bold text-sm hover:bg-[#dae5dd] transition-all duration-300 flex items-center justify-center gap-2"
             >
-              <Phone className="w-4 h-4 text-[#4a6451]" />
-              <span>(62) 3999-0000</span>
+              <WhatsAppIcon className="w-4 h-4 fill-[#141e19]" />
+              <span>Ligar Agora</span>
             </a>
           </div>
         </div>

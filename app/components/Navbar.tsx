@@ -9,7 +9,6 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Ensure page always loads at top on visit/refresh
     window.scrollTo(0, 0);
   }, []);
 
@@ -31,9 +30,9 @@ export default function Navbar() {
             </div>
           </div>
           <div className="flex items-center gap-3 sm:gap-4 shrink-0 mx-auto md:mx-0">
-            <a href="https://api.whatsapp.com/send/?phone=62981678149&text=Ol%C3%A1%2C+gostaria+de+saber+sobre+o+servi%C3%A7o+de+voc%C3%AAs+e+um+or%C3%A7amento+se+poss%C3%ADvel%21&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors flex items-center gap-1.5 font-semibold text-[#ffdea4]">
+            <a href="https://api.whatsapp.com/send/?phone=556281678149&text=Ol%C3%A1%2C+gostaria+de+saber+sobre+o+servi%C3%A7o+de+voc%C3%AAs+e+um+or%C3%A7amento+se+poss%C3%ADvel%21&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors flex items-center gap-1.5 font-semibold text-[#ffdea4]">
               <WhatsAppIcon className="w-4 h-4 fill-[#25D366]" />
-              <span>(62) 98167-8149 (WhatsApp)</span>
+              <span>(62) 8167-8149 (WhatsApp / Ligações)</span>
             </a>
           </div>
         </div>

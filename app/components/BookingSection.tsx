@@ -14,7 +14,7 @@ export default function BookingSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Olá! Gostaria de solicitar um atendimento VIP.%0A%0A*Nome:* ${encodeURIComponent(name)}%0A*WhatsApp:* ${encodeURIComponent(phone)}%0A*Serviço:* ${encodeURIComponent(service)}%0A*Região:* ${encodeURIComponent(region)}%0A*Horário:* ${encodeURIComponent(timeSlot)}%0A%0AAguardo retorno da central!`;
-    const whatsappUrl = `https://api.whatsapp.com/send/?phone=62981678149&text=${text}&type=phone_number&app_absent=0`;
+    const whatsappUrl = `https://api.whatsapp.com/send/?phone=556281678149&text=${text}&type=phone_number&app_absent=0`;
     
     setSubmitted(true);
     window.open(whatsappUrl, '_blank');
@@ -51,11 +51,11 @@ export default function BookingSection() {
                     className="w-full h-12 px-3.5 sm:px-4 rounded-xl bg-[#ebf7ee] text-[#141e19] text-xs font-medium outline-none focus:ring-2 focus:ring-[#106e00]"
                   >
                     <option value="">Selecione o serviço...</option>
+                    <option value="Higienização de Ar-Condicionado">Higienização de Ar-Condicionado</option>
+                    <option value="Manutenção de Geladeiras">Manutenção de Geladeiras</option>
+                    <option value="Ajuste de Móveis Planejados">Ajuste de Móveis Planejados</option>
                     <option value="Manutenção / Troca de Chuveiro Elétrico">Manutenção / Troca de Chuveiro Elétrico</option>
                     <option value="Reparos de Torneiras e Pias">Reparos de Torneiras e Pias</option>
-                    <option value="Ajuste de Móveis Planejados">Ajuste de Móveis Planejados</option>
-                    <option value="Higienização de Ar-Condicionado">Higienização de Ar-Condicionado</option>
-                    <option value="Manutenção de Geladeira / Freezer">Manutenção de Geladeira / Freezer</option>
                     <option value="Manutenção de Máquina de Lavar">Manutenção de Máquina de Lavar</option>
                     <option value="Pequenas Pinturas e Retoques">Pequenas Pinturas e Retoques</option>
                     <option value="Consultoria Técnica Geral">Consultoria Técnica Geral</option>
@@ -119,7 +119,7 @@ export default function BookingSection() {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label className="text-xs font-bold text-[#141e19]">WhatsApp VIP para Contato</label>
+                  <label className="text-xs font-bold text-[#141e19]">WhatsApp para Contato</label>
                   <input
                     required
                     value={phone}
@@ -152,7 +152,7 @@ export default function BookingSection() {
               </div>
               <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#141e19]">Chamado VIP Transmitido com Sucesso!</h3>
               <p className="text-xs sm:text-sm text-[#404a3b] max-w-md mx-auto leading-relaxed">
-                Você foi redirecionado para o WhatsApp de atendimento oficial. Nossa central em Goiânia aguarda seu contato!
+                Você foi redirecionado para o WhatsApp oficial de atendimento ((62) 8167-8149). Nossa central em Goiânia aguarda seu contato!
               </p>
               <button
                 onClick={() => setSubmitted(false)}
