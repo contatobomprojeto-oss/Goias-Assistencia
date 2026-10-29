@@ -54,6 +54,53 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           }}
         />
         {/* End Google Tag Manager */}
+
+        {/* Schema.org LocalBusiness Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Goiás Residencial Concierge",
+              "image": "https://goiasassistencia.com.br/assets/aistudio/Gemini_Generated_Image_1987gs1987gs1987-Photoroom_aabb7a61.png",
+              "@id": "https://goiasassistencia.com.br",
+              "url": "https://goiasassistencia.com.br",
+              "telephone": "+55-62-98167-8149",
+              "priceRange": "$$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Setor Marista",
+                "addressLocality": "Goiânia",
+                "addressRegion": "GO",
+                "postalCode": "74150-000",
+                "addressCountry": "BR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -16.7136,
+                "longitude": -49.255
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+              },
+              "sameAs": [
+                "https://api.whatsapp.com/send/?phone=62981678149"
+              ]
+            })
+          }}
+        />
       </head>
       <body suppressHydrationWarning className="bg-[#f1fcf3] text-[#141e19] font-['Plus_Jakarta_Sans',sans-serif] antialiased">
         {/* Google Tag Manager (noscript) */}

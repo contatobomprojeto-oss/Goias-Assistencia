@@ -14,7 +14,6 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col gap-3 sm:gap-4">
-              <span className="text-[11px] sm:text-xs font-bold tracking-[0.25em] uppercase text-[#755a24]">Quiet Luxury Residencial</span>
               <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-medium text-[#141e19] leading-[1.12]">
                 Tranquilidade, Cuidado e <span className="italic text-[#106e00]">Excelência Técnica</span> para o seu Lar.
               </h1>
