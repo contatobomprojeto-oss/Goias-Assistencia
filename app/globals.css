@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Newsreader', serif;
+  }
+}
+
+.bg-botanical-green { background-color: #5CB846; }
+.text-botanical-green { color: #5CB846; }
+.bg-forest-dark { background-color: #1C3524; }
+.text-forest-dark { color: #1C3524; }
+.bg-champagne { background-color: #C9A86A; }
+.text-champagne { color: #C9A86A; }
+

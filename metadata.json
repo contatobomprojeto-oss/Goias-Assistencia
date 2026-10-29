@@ -1,0 +1,6 @@
+{
+  "name": "Goiás Residencial Concierge",
+  "description": "Assistência Residencial de Luxo e Concierge para Alto Padrão em Goiás",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

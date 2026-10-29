@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#ffdea4","on-tertiary-fixed":"#261900","inverse-primary":"#7edc65","on-primary":"#ffffff","surface-dim":"#d1ddd4","on-secondary-fixed-variant":"#334c3a","primary-fixed-dim":"#7edc65","tertiary-container":"#c09f62","secondary-fixed":"#ccead1","surface-container":"#e5f1e8","error-container":"#ffdad6","primary":"#106e00","on-surface-variant":"#404a3b","on-primary-container":"#074400","on-tertiary-fixed-variant":"#5b430e","outline":"#707a69","inverse-surface":"#28332d","on-primary-fixed":"#022100","on-secondary":"#ffffff","secondary":"#4a6451","surface":"#f1fcf3","tertiary-fixed-dim":"#e5c281","primary-container":"#5cb846","on-secondary-container":"#4e6955","surface-container-low":"#ebf7ee","on-tertiary":"#ffffff","secondary-container":"#c9e7ce","on-tertiary-container":"#4c3602","on-background":"#141e19","on-primary-fixed-variant":"#0a5300","error":"#ba1a1a","on-error":"#ffffff","surface-bright":"#f1fcf3","outline-variant":"#bfcab6","on-error-container":"#93000a","primary-fixed":"#99f97e","tertiary":"#755a24","surface-tint":"#106e00","surface-container-lowest":"#ffffff","on-surface":"#141e19","background":"#f1fcf3","inverse-on-surface":"#e8f4eb","secondary-fixed-dim":"#b1ceb5","surface-container-highest":"#dae5dd","surface-variant":"#dae5dd","on-secondary-fixed":"#072011","surface-container-high":"#dfebe2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin":"3rem","margin-mobile":"1.25rem","space-md":"1rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"display-lg":["Newsreader"],"headline-xl":["Newsreader"],"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Newsreader"],"body-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Newsreader"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50"><div class="bg-inverse-surface text-inverse-on-surface py-2 px-6 lg:px-12"><div class="max-w-7xl mx-auto flex items-center justify-between text-label-sm font-label-sm"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-primary-fixed">verified</span><span>Concierge Residencial 24h</span></div><span class="hidden md:inline text-outline-variant">|</span><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-tertiary-fixed">support_agent</span><span>Atendimento Prioritário Condomínios Fechados</span></div></div><div class="flex items-center gap-space-md"><a class="hover:text-primary-fixed transition-colors flex items-center gap-1" href="tel:62999990000"><span>(62) 3999-0000</span></a><span class="text-outline-variant">|</span><a class="text-tertiary-fixed font-bold hover:underline flex items-center gap-1" href="#"><span>Plantão VIP WhatsApp</span></a></div></div></div><div class="h-20 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(28,53,36,0.04)]"><div class="max-w-7xl mx-auto h-full px-6 lg:px-12 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex flex-col"><span class="font-headline-lg text-headline-lg text-primary tracking-tight leading-none">GOIÁS</span><span class="font-label-sm text-label-sm tracking-widest text-secondary uppercase">Assistência Residencial VIP</span></div></div><nav class="hidden xl:flex items-center gap-space-md font-label-lg text-label-lg" data-active-classes="bg-surface-container-high text-primary font-label-lg rounded-lg"><a aria-current="page" class="px-3 py-2 transition-all bg-surface-container-high text-primary font-label-lg rounded-lg" data-path="home" href="#">Início</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="servicos-premium" href="#">Serviços Premium</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="novos-servicos" href="#">Novos Serviços</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="como-funciona" href="#">Como Funciona</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="planos-e-cobertura" href="#">Planos &amp; Cobertura</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="sobre-nos" href="#">Sobre Nós</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="depoimentos" href="#">Depoimentos</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary shadow-[0_4px_14px_rgba(92,184,70,0.25)] transition-all" data-path="solicitar-atendimento-vip" href="#">Solicitar Atendimento VIP</a><div class="flex items-center pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida/AEtjO1UBkIz_fCWvjwZQJs8lfW4uon8DOGKDLYOsi2kjetr9vfqLDXd48yxF2gPkYJD-UT6fcl4HzBPSnddb8M-mW_lak2D4QBDpWCd-lkNpZohXHS6SwHRPL1FUi0mVEDvq0FZ8HEZbUKz3s-n4UL4lgycvXXFl1Pq0B_55VaHFXvhdZBpASZ444kLr8BbLuMi68RnD1X6V2wdHLpySicLGMhkDWTfdipwPW5gRIqyVxBKdGhj8oJX9PbecuNSR"/></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface py-12 lg:py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Text Column -->
+<div class="lg:col-span-6 flex flex-col gap-6 z-10">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm w-fit shadow-sm">
+<span class="material-symbols-outlined text-sm text-primary">verified_user</span>
+<span>EXCELÊNCIA &amp; SEGURANÇA HOMOLOGADA</span>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-label-md font-label-md tracking-widest uppercase text-tertiary">Quiet Luxury Residencial</span>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">
+              Tranquilidade, Cuidado e <span class="italic text-primary font-serif">Excelência Técnica</span> para o seu Lar.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-xl">
+              Suporte residencial sob medida em Goiânia com pontualidade impecável, técnicos rigorosamente checados e discrição absoluta para proteger o que é mais valioso para você.
+            </p>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+<a class="px-7 py-4 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary shadow-md hover:shadow-xl transition-all duration-300 text-center flex items-center justify-center gap-2 group" href="#solicitar-vip">
+<span>Agendar Especialista Residencial</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="px-7 py-4 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-all duration-300 text-center flex items-center justify-center gap-2" href="#planos">
+<span class="material-symbols-outlined text-secondary">hotel_class</span>
+<span>Conhecer Planos de Concierge</span>
+</a>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-base">villa</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Condomínios Fechados VIP</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-base">badge</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Rigoroso Background Check</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-base">workspace_premium</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Garantia Técnica Integral</span>
+</div>
+</div>
+</div>
+<!-- Visual Hero Media -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container">
+<img alt="Família feliz em sala de estar espaçosa e iluminada em condomínio fechado" class="w-full h-[460px] lg:h-[540px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbtAOYldteczY7vraw3bIz8CDe4Zs7V_kcWgyHrks1p_pLBHbVTAPVdpq7Iq45wyoYTnRNixqxTOlnIgqqm82wvQKNd_UIfdr8r8feV-vDiF0u07INcJnP_lrgbczxS7H2L10a8J33h5Z5dMbUlH1twCRJCM6HSrbEjK_Fp_XRTRLXqIrJxDNStsHDdo9Amio1duZgl0OjB7Vuv2QTFwfZcHSdz2V7a8YMPAZpSC_O"/>
+<!-- Glass Floating Card overlay -->
+<div class="absolute bottom-6 left-6 right-6 p-5 rounded-xl bg-surface/90 backdrop-blur-md shadow-lg flex items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-11 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">format_image_left</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Ambiente Seguro &amp; Preservado</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Protocolo estrito de proteção patrimonial</p>
+</div>
+</div>
+<div class="hidden sm:flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-primary font-bold">100% HOMOLOGADO</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alphaville &amp; Aldeia</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK ACCESS STRIP -->
+<section class="w-full bg-surface-container-low py-6">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">Plantão Executivo Ativo agora em Goiânia:</span>
+</div>
+<div class="flex flex-wrap items-center gap-6 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Alphaville Flamboyant</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Aldeia do Vale</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Jardins Parigi &amp; Verona</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Setores Marista &amp; Bueno</span>
+</div>
+</div>
+</section>
+<!-- NOVO PORTFÓLIO DE SERVIÇOS EXCLUSIVOS -->
+<section class="w-full py-20 bg-surface" id="novos-servicos">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-14">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-2 max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Atualização Contínua de Soluções</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+            Novos Serviços Sob Medida para a sua Rotina
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Atenção minuciosa aos detalhes que garantem o funcionamento impecável da sua residência, sem improvisos e com equipamentos especializados.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm">
+            Disponibilidade Imediata
+          </span>
+</div>
+</div>
+<!-- Bento Grid of Services -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Item 1 -->
+<div class="flex flex-col p-6 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex items-center justify-between pb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">shower</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm">NOVO</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Chuveiro Elétrico &amp; Pressurização</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Instalação segura com conferência técnica de disjuntores, bitola de fiação e vedação de acabamento com acabamento limpo.
+          </p>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-primary">
+<span>Ver detalhes técnicos</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col p-6 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex items-center justify-between pb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">faucet</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm">PREMIUM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Reparos de Torneiras &amp; Pias</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Troca de cartuchos cerâmicos monocomando importados, eliminação de microvazamentos e alinhamento de cubas e sifões gourmet.
+          </p>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-primary">
+<span>Ver detalhes técnicos</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col p-6 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex items-center justify-between pb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">table_rows</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm">NOVO</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Ajuste de Móveis Planejados</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Regulagem milimétrica de dobradiças com amortecimento Blum, alinhamento de gavetões e manutenção de trilhos telescópicos e portas de correr.
+          </p>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-primary">
+<span>Ver detalhes técnicos</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col p-6 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex items-center justify-between pb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">air_purifier_gen</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm">ESSENCIAL</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Higienização de Ar-Condicionado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Desinfecção antibacteriana com laudo de qualidade do ar, desobstrução de drenos e ganho imediato de eficiência energética para Inverter e VRF.
+          </p>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-primary">
+<span>Ver detalhes técnicos</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex flex-col p-6 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex items-center justify-between pb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">kitchen</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm">NOVO</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Manutenção de Geladeiras</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Diagnóstico ágil para modelos French Door e Side by Side de marcas de alto padrão (LG, Samsung, Viking, Sub-Zero), com peças genuínas.
+          </p>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-primary">
+<span>Ver detalhes técnicos</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="flex flex-col p-6 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex items-center justify-between pb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">local_laundry_service</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm">NOVO</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Máquinas de Lavar e Secar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Revisão eletromecânica sem acúmulo de sujeira no seu espaço de serviço. Calibração de bombas, motores direct-drive e esteiras de aquecimento.
+          </p>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-primary">
+<span>Ver detalhes técnicos</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="flex flex-col p-6 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 group lg:col-span-2">
+<div class="flex items-center justify-between pb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">format_paint</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm">DISCRIÇÃO TOTAL</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Pequenas Pinturas, Retoques e Molduras</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Recuperação de cantos, rodapés em poliestireno, furos de quadros e retoques localizados em tintas nobres (Coral Super Lavável, Suvinil Toque de Seda), com isolamento hermético do piso e móveis.
+          </p>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-primary">
+<span>Solicitar orçamento sem ruído</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- O PADRÃO GOIÁS ASSISTÊNCIA (DIFERENCIAIS) -->
+<section class="w-full py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Media Pillar with Technician Image -->
+<div class="lg:col-span-5 relative order-2 lg:order-1">
+<div class="rounded-2xl overflow-hidden shadow-xl bg-surface-container-highest relative">
+<img alt="Técnico uniformizado especializado prestando assistência em residência de alto padrão com organização e ferramentas alinhadas" class="w-full h-[520px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLqOXvdSiEvpNINDbq1lq-NqjGxv-vBxbSAUG-lRNoaSX59-gcc2v17beMOE_ynEdYWmKcxohubjXqhaFsD0ZsS7vQu2KGSOqw86sG9vsZ0y-HG5vos_G4YRV91nRB1L2bYZJacRIbM80ft5l5JF-BX30NtS71s7v1WtuenaQvEM8W0N-ATEQA7QLer7q6a1PdJw5aKThY84LAbrmwoP1F7ZjCx6tNfeq0LjWwhenN"/>
+<!-- Overlay Tag -->
+<div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-sm">badge</span>
+<span>Engenharia &amp; Rigor Operacional</span>
+</div>
+</div>
+</div>
+<!-- Value Pillars -->
+<div class="lg:col-span-7 flex flex-col gap-8 order-1 lg:order-2">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Protocolo Operacional 5 Estrelas</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+              O Padrão Goiás Assistência VIP
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Criamos uma experiência que respeita a privacidade da sua família e a harmonia estética da sua casa. Nada é deixado ao acaso.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Pillar 1 -->
+<div class="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Pontualidade Britânica</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Horário com hora marcada rigorosa, sem janelas vagas e sem esperas desnecessárias no seu dia.
+              </p>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">clean_hands</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Preservação do Ambiente</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Uso de propés descartáveis, mantas protetoras para ferramentas e limpeza/aspiração completa pós-serviço.
+              </p>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">fingerprint</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Background Check Estrito</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Profissionais com antecedentes criminais validados trimestralmente e credenciamento fotográfico prévio enviado ao morador.
+              </p>
+</div>
+<!-- Pillar 4 -->
+<div class="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Garantia Documentada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Cobertura formal de 90 a 180 dias com Nota Fiscal eletrônica e laudo técnico detalhado em PDF.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SOLUÇÕES COMPLETAS & ENGENHARIA RESIDENCIAL -->
+<section class="w-full py-20 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Gestão Integral de Patrimônio</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Soluções Residenciais Completas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Do suporte emergencial diário à manutenção preventiva planejada para mansões e coberturas duplex.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Solution 1 -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Elétrica &amp; Automação</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Quadros de distribuição trifásicos, no-breaks, painéis solares, sistemas Lutron/Control4 e iluminação cênica.
+          </p>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1.5 pt-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Balanceamento de carga</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Manutenção de geradores</li>
+</ul>
+</div>
+<!-- Solution 2 -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">water_damage</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Hidráulica &amp; Bombas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Centrais de pressurização, aquecimento solar/gás, caixas d'água de grande capacidade e drenagem de piscinas.
+          </p>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1.5 pt-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Caça-vazamento acústico</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Filtros centrais de entrada</li>
+</ul>
+</div>
+<!-- Solution 3 -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">microwave</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Eletros de Embutir VIP</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Fornos combinados, adegas climatizadas, cooktops de indução e trituradores de alta vazão.
+          </p>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1.5 pt-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Instalação técnica com garantia</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Nivelamento e vedação perfeita</li>
+</ul>
+</div>
+<!-- Solution 4 -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">holiday_village</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Casas de Veraneio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Check-up preventivo mensal para casas em condomínios de lazer e chácaras nobres para você chegar sem surpresas.
+          </p>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1.5 pt-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Teste de motores e bombas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Verificação de telhados e calhas</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- CALCULADORA RÁPIDA / SELETOR DE CHAMADO VIP -->
+<section class="w-full py-20 bg-inverse-surface text-inverse-on-surface" id="solicitar-vip">
+<div class="max-w-5xl mx-auto px-6 lg:px-12 flex flex-col gap-10">
+<div class="text-center flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed">Agendamento Exclusivo</span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary">
+          Solicitar Atendimento VIP em 3 Passos
+        </h2>
+<p class="font-body-md text-body-md text-surface-dim max-w-xl mx-auto">
+          Defina sua necessidade. O nosso Concierge Técnico retornará em até 15 minutos com o perfil do profissional credenciado.
+        </p>
+</div>
+<!-- Form Box -->
+<div class="bg-surface rounded-2xl p-8 lg:p-10 text-on-surface shadow-2xl">
+<form class="flex flex-col gap-8" onsubmit="event.preventDefault(); document.getElementById('feedback-envio').classList.remove('hidden');">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Step 1 -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold">1</span>
+<span>Tipo de Serviço</span>
+</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary">
+<option value="">Selecione o serviço...</option>
+<option value="chuveiro">Manutenção / Troca de Chuveiro Elétrico</option>
+<option value="torneira">Reparos de Torneiras e Pias</option>
+<option value="planejados">Ajuste de Móveis Planejados</option>
+<option value="ar">Higienização de Ar-Condicionado</option>
+<option value="geladeira">Manutenção de Geladeira / Freezer</option>
+<option value="lavar">Manutenção de Máquina de Lavar</option>
+<option value="pintura">Pequenas Pinturas e Retoques</option>
+<option value="outro">Consultoria Técnica Geral</option>
+</select>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold">2</span>
+<span>Região ou Condomínio</span>
+</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary">
+<option value="">Selecione a sua localização...</option>
+<option value="alphaville">Alphaville Flamboyant (Araguaia/Cruzeiro/Ipês/Goiás)</option>
+<option value="aldeia">Aldeia do Vale</option>
+<option value="jardins">Jardins (Parigi, Verona, Munique, Valência)</option>
+<option value="marista">Setor Marista / Bueno / Sul</option>
+<option value="portal">Portal do Sol / Granville</option>
+<option value="outro">Outro Bairro Nobre de Goiânia</option>
+</select>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold">3</span>
+<span>Horário Preferencial</span>
+</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary">
+<option value="urgente">Imediato (Emergência 24h)</option>
+<option value="manha">Ainda Hoje - Período da Manhã</option>
+<option value="tarde">Ainda Hoje - Período da Tarde</option>
+<option value="amanha">Amanhã - Primeiro Horário</option>
+<option value="combinar">Agendar Data Específica com Concierge</option>
+</select>
+</div>
+</div>
+<!-- Contact Inputs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Nome Completo do Titular</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary" placeholder="Ex: Dr. Roberto Sampaio" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">WhatsApp VIP para Contato</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary" placeholder="(62) 99999-0000" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-base">lock</span>
+<span>Seus dados são estritamente confidenciais (LGPD).</span>
+</div>
+<button class="w-full sm:w-auto px-8 py-4 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2" type="submit">
+<span>Transmitir Chamado ao Concierge</span>
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+<div class="hidden mt-6 p-4 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center gap-3" id="feedback-envio">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="font-body-sm text-body-sm">Chamado VIP recebido com sucesso. Nosso concierge entrará em contato via WhatsApp em poucos minutos.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- PROVA SOCIAL / DEPOIMENTOS DE MORADORES -->
+<section class="w-full py-20 bg-surface" id="depoimentos">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Confiança Consolidada</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+            O que dizem os condôminos
+          </h2>
+</div>
+<div class="flex items-center gap-2 text-tertiary">
+<div class="flex text-amber-600">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">4.9/5 em mais de 1.400 residências atendidas</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex text-amber-600">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+            "A pontualidade é fora da curva para Goiânia. O técnico chegou no minuto exato com propés, organizou as ferramentas sobre mantas e resolveu a pane elétrica da nossa adega sem nenhuma sujeira."
+          </p>
+<div class="pt-4 border-t border-surface-container flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Dra. Camila Bittencourt</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Alphaville Ipês</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-xl">verified</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex text-amber-600">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+            "Fizemos a higienização completa dos 7 splits da casa e o ajuste dos armários da cozinha gourmet. Profissionais educados, discretos e que transmitem segurança para estarem dentro de casa."
+          </p>
+<div class="pt-4 border-t border-surface-container flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Marcelo Guimarães</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aldeia do Vale</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-xl">verified</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex text-amber-600">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+            "Acionamos o plantão num domingo de manhã devido a um vazamento no pressurizador. Em 40 minutos o engenheiro já estava na portaria do condomínio com a peça certa para substituição."
+          </p>
+<div class="pt-4 border-t border-surface-container flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Fernanda &amp; Rodrigo S.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Jardins Parigi</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-xl">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA FINAL DE CONVERSÃO VIP -->
+<section class="w-full py-16 bg-surface-container">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="rounded-2xl bg-inverse-surface text-inverse-on-surface p-8 lg:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+<div class="flex flex-col gap-3 max-w-xl">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider">Atendimento Direto e Imediato</span>
+<h3 class="font-display-lg-mobile lg:font-headline-xl text-headline-xl text-on-primary">
+            Precisa de um especialista hoje em sua residência?
+          </h3>
+<p class="font-body-md text-body-md text-surface-dim">
+            Fale instantaneamente com a nossa Central VIP via WhatsApp. Sem filas, com encaminhamento prioritário para a sua região.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3" href="https://wa.me/5562999990000">
+<span class="material-symbols-outlined text-2xl">chat</span>
+<span>Chamar no WhatsApp VIP</span>
+</a>
+<a class="w-full sm:w-auto px-6 py-4 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-all duration-300 flex items-center justify-center gap-2" href="tel:6239990000">
+<span class="material-symbols-outlined">call</span>
+<span>(62) 3999-0000</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-16 pb-12 shadow-[0_-4px_24px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-surface-variant/10"><div class="flex flex-col gap-space-md"><div><span class="font-headline-lg text-headline-lg text-primary-fixed tracking-tight">GOIÁS</span><p class="font-label-sm text-label-sm tracking-widest text-secondary-fixed uppercase mt-1">Assistência Residencial VIP</p></div><p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">Excelência técnica e discrição absoluta na gestão e manutenção de residências de alto padrão em Goiânia e condomínios fechados.</p><div class="flex items-center gap-space-sm pt-2"><span class="material-symbols-outlined text-primary-fixed text-lg">security</span><span class="font-label-sm text-label-sm text-surface-dim">Protocolo de Segurança Homologado</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-tertiary-fixed">Regiões Atendidas</h4><ul class="font-body-sm text-body-sm text-surface-dim space-y-2"><li>Alphaville Flamboyant &amp; Aldeia do Vale</li><li>Jardins (Parigi, Verona, Munique, Valência)</li><li>Setor Marista, Bueno &amp; Sul</li><li>Portal do Sol &amp; Granville</li><li>Aparecida de Goiânia (Regiões Nobres)</li><li>Senador Canedo (Condomínios Fechados)</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-tertiary-fixed">Especialidades 24h</h4><ul class="font-body-sm text-body-sm text-surface-dim space-y-2"><li>Sistemas Hidráulicos &amp; Pressurização</li><li>Engenharia Elétrica &amp; Geradores</li><li>Climatização Central &amp; VRF</li><li>Automação Residencial &amp; CFTV</li><li>Cobertura Estrutural &amp; Telhados</li><li>Manutenção Preventiva de Spas &amp; Piscinas</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-tertiary-fixed">Central Executiva</h4><div class="font-body-sm text-body-sm text-surface-dim space-y-2"><p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary-fixed">call</span> (62) 3999-0000</p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary-fixed">chat</span> WhatsApp VIP: (62) 99999-0000</p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary-fixed">schedule</span> Plantão Técnico: 24 Horas / 365 Dias</p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary-fixed">location_on</span> Av. 136, Setor Marista, Goiânia - GO</p></div><div class="pt-4"><span class="inline-block px-3 py-1 bg-surface-variant/20 rounded-full font-label-sm text-label-sm text-tertiary-fixed">Garantia Integral de 12 Meses</span></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-surface-dim"><p>© 2025 Goiás Assistência Residencial VIP. Todos os direitos reservados. CNPJ homologado.</p><div class="flex items-center gap-6 font-label-md text-label-md"><a class="hover:text-primary-fixed transition-colors" href="#">Termos de Cobertura</a><a class="hover:text-primary-fixed transition-colors" href="#">Privacidade &amp; Sigilo</a><a class="hover:text-primary-fixed transition-colors" href="#">Canal do Condômino</a></div></div></div></footer></body></html>
